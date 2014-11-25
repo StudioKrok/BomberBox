@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>GiAPI</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  
+  <body onload="init()">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-primary">GiAPI</h1>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-xs-12 col-md-6">
+          <!-- LEFT -->
+          <div class="btn btn-primary" onclick="addToProgram('left')">
+            <i class="fa fa-hand-o-left fa-2x"></i>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="btn btn-primary" onclick="addToProgram('right')">
+            <i class="fa fa-hand-o-right fa-2x"></i>
+          </div>
+
+          <!-- UP -->
+          <div class="btn btn-primary" onclick="addToProgram('up')">
+            <i class="fa fa-hand-o-up fa-2x"></i>
+          </div>
+
+          <!-- DOWN -->
+          <div class="btn btn-primary" onclick="addToProgram('down')">
+            <i class="fa fa-hand-o-down fa-2x"></i>
+          </div>
+
+          <!-- JUMP -->
+          <div class="btn btn-primary" onclick="addToProgram('jump')">
+            <i class="fa fa-share fa-2x"></i>
+          </div>
+
+          <!-- REMOVE -->
+          <div class="btn btn-danger" onclick="removeLast()">
+            <i class="fa fa-trash-o fa-2x"></i>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <!-- PLAY -->
+          <div class="btn btn-success" onclick="runProgram()">
+            <i class="fa fa-play fa-2x"> Play </i>
+          </div>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-xs-12">
+        </br>
+          <pre id="programExecution"></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- <i class="fa fa-step-backward fa-5x"></i> -->
+    <!-- <canvas id="myCanvas" width="800" height="800" style="border:1px solid #000000;"></canvas> -->
+
+    <!-- JS script loading -->
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/logic/giapi.js"></script>
+  </body>
+</html>
